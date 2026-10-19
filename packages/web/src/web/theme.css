@@ -1,0 +1,347 @@
+/* Poppins is self-hosted in /public/fonts and declared in styles.css. */
+:root,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: Poppins, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.footer-wordmark,
+.season-numbers strong,
+.profile-stats strong,
+.league-stats strong,
+.transfer-promo-total strong,
+.header-inner nav a,
+.team-value-total b,
+.weekly-rating-badge,
+.pitch-rating-badge {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+}
+p,
+input,
+select,
+textarea,
+td,
+th,
+label {
+  font-family: Poppins, sans-serif;
+}
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  height: 44px;
+  width: 44px;
+  border-radius: 100px;
+  background: #ffffffb8;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 6px #31405a08;
+  color: #505b6b;
+}
+.theme-toggle:hover {
+  color: var(--orange);
+}
+@media (max-width: 700px) {
+  .theme-toggle {
+    height: 44px;
+    width: 44px;
+  }
+}
+@media (max-width: 360px) {
+  .brand {
+    width: 64px;
+  }
+  .header-inner {
+    gap: 5px;
+  }
+  .header-inner nav {
+    gap: 3px;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ink: #f2f5fb;
+  --foreground: #f2f5fb;
+  --muted: #acb9c9;
+  --paper: #101823;
+  --background: #101823;
+  --line: #36465a;
+  --border: #36465a;
+  --glass: #202d3add;
+  --glass-shadow: 0 14px 44px #03091160, inset 0 1px 0 #ffffff14;
+  color-scheme: dark;
+  background: var(--paper);
+  color: var(--ink);
+}
+[data-theme="dark"] body {
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse at 5% 8%, #70321b4a, transparent 40%),
+    radial-gradient(ellipse at 98% 30%, #27446b73, transparent 48%), #101823;
+}
+[data-theme="dark"] .topline {
+  color: #bbc9d7;
+}
+[data-theme="dark"] header,
+[data-theme="dark"] .header-inner nav,
+[data-theme="dark"] .notification-dropdown {
+  background: #1c2a38f2;
+  border-color: #66799053;
+  box-shadow:
+    0 18px 45px #050a1499,
+    inset 0 1px 0 #ffffff17;
+}
+[data-theme="dark"] .header-inner nav a,
+[data-theme="dark"] .notification-bell,
+[data-theme="dark"] .theme-toggle,
+[data-theme="dark"] .admin-link,
+[data-theme="dark"] .menu-toggle {
+  color: #e0e8f2;
+}
+[data-theme="dark"] .header-inner nav a.active,
+[data-theme="dark"] .header-inner nav a:hover {
+  background: #314153;
+  color: #ff9c6b;
+}
+[data-theme="dark"] .admin-link,
+[data-theme="dark"] .notification-bell,
+[data-theme="dark"] .menu-toggle,
+[data-theme="dark"] .theme-toggle {
+  background: #293849;
+  border-color: #566b82aa;
+  box-shadow: 0 2px 9px #0004;
+}
+[data-theme="dark"] .panel,
+[data-theme="dark"] .team-strip,
+[data-theme="dark"] .team-card,
+[data-theme="dark"] .squad-card,
+[data-theme="dark"] .performance-promos > a,
+[data-theme="dark"] .profile-stats,
+[data-theme="dark"] .league-stats,
+[data-theme="dark"] .admin-entry,
+[data-theme="dark"] .edit-panel,
+[data-theme="dark"] .standings-info,
+[data-theme="dark"] .admin-toolbar,
+[data-theme="dark"] .weekly-admin-row {
+  background: var(--glass);
+  border-color: #52637769;
+  box-shadow: var(--glass-shadow);
+}
+[data-theme="dark"] .team-card {
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      color-mix(in srgb, var(--team-color) 18%, transparent),
+      transparent 65%
+    ),
+    var(--glass);
+}
+[data-theme="dark"] .team-card,
+[data-theme="dark"] .squad-card,
+[data-theme="dark"] .profile-stats,
+[data-theme="dark"] .admin-entry,
+[data-theme="dark"] .panel {
+  color: var(--ink);
+}
+[data-theme="dark"] .eyebrow,
+[data-theme="dark"] label,
+[data-theme="dark"] .standings td,
+[data-theme="dark"] .standings th,
+[data-theme="dark"] .performance-table td,
+[data-theme="dark"] .performance-table th,
+[data-theme="dark"] .transfers-table td,
+[data-theme="dark"] .transfers-table th,
+[data-theme="dark"] .fixture-meta,
+[data-theme="dark"] .table-note,
+[data-theme="dark"] .rating-formula p,
+[data-theme="dark"] .rating-formula small,
+[data-theme="dark"] .footer-bottom {
+  color: #bdc9d8;
+}
+[data-theme="dark"] .standings th,
+[data-theme="dark"] .performance-table th,
+[data-theme="dark"] .transfers-table th {
+  background: #2c3d50;
+}
+[data-theme="dark"] .standings tbody tr:hover,
+[data-theme="dark"] .performance-table tbody tr:hover,
+[data-theme="dark"] .weekly-player-card:hover,
+[data-theme="dark"] .notification-item:hover {
+  background: #304155;
+}
+[data-theme="dark"] .standings .rank-col .first-rank,
+[data-theme="dark"] .player-value-badge,
+[data-theme="dark"] .sample-note,
+[data-theme="dark"] .performance-table .metric-active {
+  background: #583620;
+  color: #ffb780;
+}
+[data-theme="dark"] .tabs {
+  background: #2a394a;
+  border-color: #506177;
+}
+[data-theme="dark"] .tabs button {
+  color: #bfcbd9;
+}
+[data-theme="dark"] .tabs button.selected {
+  background: #4c5d71;
+  color: white;
+}
+[data-theme="dark"] .header-inner nav a.active {
+  color: #ffae7f;
+}
+[data-theme="dark"] .panel-bottom-link,
+[data-theme="dark"] .photo-upload,
+[data-theme="dark"] .derived-stat,
+[data-theme="dark"] .empty-icon,
+[data-theme="dark"] .notification-heading button,
+[data-theme="dark"] .weekly-contributions > span,
+[data-theme="dark"] .squad-number {
+  background: #304155;
+  color: #d6e2ef;
+  border-color: #526579;
+}
+[data-theme="dark"] .player-avatar {
+  background: #334458;
+  color: #c4d3e3;
+}
+[data-theme="dark"] .rating-formula {
+  background: linear-gradient(110deg, #503324a6, #294158a3);
+  border-color: var(--line);
+}
+[data-theme="dark"] .rating-formula > svg {
+  color: #ffab76;
+}
+[data-theme="dark"] .weekly-player-card.did-not-play {
+  color: #d0dbe7;
+}
+[data-theme="dark"] .weekly-rating-badge {
+  border-color: #223144;
+}
+[data-theme="dark"] .transfer-promo,
+[data-theme="dark"] .performance-promos > a:last-child,
+[data-theme="dark"] .push-opt-in {
+  background: linear-gradient(135deg, #4b3427, #374151);
+  border-color: #77543e;
+  color: #ffead6;
+}
+[data-theme="dark"] .transfer-promo > p,
+[data-theme="dark"] .transfer-promo > .eyebrow,
+[data-theme="dark"] .transfer-promo-total > span {
+  color: #f2cbb1;
+}
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+  background: #172433;
+  color: #edf4fc;
+  border-color: #5b6d80;
+}
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: #a9bacd;
+}
+[data-theme="dark"] .button.dark,
+[data-theme="dark"] .add-button,
+[data-theme="dark"] .ratings-footer button {
+  background: #3a5068;
+  color: #f1f6fc;
+}
+[data-theme="dark"] .notification-item,
+[data-theme="dark"] .notification-heading {
+  border-color: var(--line);
+}
+[data-theme="dark"] .notification-item.unread {
+  background: #283b51;
+}
+[data-theme="dark"] .notification-category,
+[data-theme="dark"] .value-cell,
+[data-theme="dark"] .player-value-badge strong {
+  color: #ffac79 !important;
+}
+[data-theme="dark"] .google-button,
+[data-theme="dark"] .push-opt-in button {
+  background: #34485e;
+  color: #f7faff;
+  border-color: #64788b;
+}
+[data-theme="dark"] .admin-explainer ul,
+[data-theme="dark"] .login-note,
+[data-theme="dark"] .login-divider,
+[data-theme="dark"] .squad-mini-stats span,
+[data-theme="dark"] .card-stats small,
+[data-theme="dark"] .notification-item time,
+[data-theme="dark"] .notification-empty,
+[data-theme="dark"] .push-help {
+  color: #b8c7d8;
+}
+[data-theme="dark"] .admin-lock {
+  background: #47372d;
+  color: #ffe5cf;
+}
+[data-theme="dark"] .admin-lock p,
+[data-theme="dark"] .push-opt-in p {
+  color: #e1c6b5;
+}
+[data-theme="dark"] .push-opt-in button {
+  background: #d8652b;
+  border-color: #e27b43;
+  color: #fff;
+}
+[data-theme="dark"] .notification-item p {
+  color: #c4d2e1;
+}
+[data-theme="dark"] .notification-item time {
+  color: #b5c5d5;
+}
+[data-theme="dark"] .weekly-player-position,
+[data-theme="dark"] .weekly-team-heading > span {
+  color: #bac9d9;
+}
+[data-theme="dark"] .draft-warning,
+[data-theme="dark"] .stale-warning {
+  background: #513a25;
+  color: #ffdbad;
+}
+[data-theme="dark"] .form-success {
+  background: #214838;
+  color: #adf6cc;
+}
+[data-theme="dark"] .form-error {
+  background: #522b32;
+  color: #ffc0c7;
+}
+[data-theme="dark"] footer {
+  background: #141e2ac9;
+  border-color: #455568;
+}
+[data-theme="dark"] .totw-pitch {
+  border-color: #517465;
+}
+[data-theme="dark"] .pitch-rating-badge {
+  border-color: #255345;
+}
+@media (prefers-reduced-transparency: reduce) {
+  [data-theme="dark"] header,
+  [data-theme="dark"] .notification-dropdown,
+  [data-theme="dark"] .panel,
+  [data-theme="dark"] .team-strip,
+  [data-theme="dark"] .team-card,
+  [data-theme="dark"] .squad-card {
+    background: #202d3a;
+    backdrop-filter: none;
+  }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  [data-theme="dark"] header {
+    background: #1c2a38;
+  }
+}
